@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Projects | Angeline P. Dorde</title>
+    <meta name="description" content="Portfolio projects by Angeline P. Dorde - Web Development projects showcasing HTML, CSS, JavaScript, PHP, and more.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .projects-hero {
+            background: linear-gradient(135deg, #2a2a44, #5c5c82);
+            color: #fff;
+            padding: 6rem 0;
+        }
+        
+        .project-detail {
+            background: #CFCFCF;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(92, 92, 130, 0.1);
+        }
+        
+        .project-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, #5c5c82, #2a2a44);
+            color: #fff;
+        }
+        
+        .project-header h3 {
+            color:#FFD700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-body {
+            padding: 2rem;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-tag {
+            background: #CFCFCF;
+            color: #5c5c82;
+            padding: 0.4rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    <div class="pattern-overlay"></div>
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><i class="fas fa-code"></i> Angeline P. Dorde</a></h1>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section projects-hero" style="background: linear-gradient(135deg, #2a2a44, #5c5c82); color: #fff; padding: 6rem 0;">
+            <div class="container">
+                <h2><i class="fas fa-briefcase"></i> My Projects</h2>
+                <p class="tagline"><i class="fas fa-laptop-code"></i> Showcasing My Web Development Work</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="project-detail">
+                    <div class="project-header">
+                        <h3><i class="fas fa-shopping-cart"></i> E-commerce Website</h3>
+                        <p style="opacity: 0.9;"><i class="fas fa-check-circle"></i> A fully functional e-commerce platform with shopping cart and checkout features</p>
+                    </div>
+                    <div class="project-body">
+                        <p>This project demonstrates my skills in creating a complete e-commerce solution with user authentication, product catalog, shopping cart functionality, and secure checkout process. The design is modern, responsive, and user-friendly.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">DOM Manipulation</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail">
+                    <div class="project-header">
+                        <h3><i class="fas fa-chart-line"></i> Data Dashboard</h3>
+                        <p style="opacity: 0.9;"><i class="fas fa-chart-bar"></i> Interactive data visualization and management dashboard</p>
+                    </div>
+                    <div class="project-body">
+                        <p>A comprehensive dashboard application that displays data in various formats including charts and graphs. Features include data filtering, real-time updates, and user-friendly interface for data management.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS Flexbox</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail">
+                    <div class="project-header">
+                        <h3><i class="fas fa-mobile-alt"></i> Responsive Landing Page</h3>
+                        <p style="opacity: 0.9;"><i class="fas fa-paint-brush"></i> Modern, conversion-focused landing page design</p>
+                    </div>
+                    <div class="project-body">
+                        <p>A beautifully designed landing page that showcases best practices in responsive web design. The page is optimized for all devices and focuses on user experience and conversion optimization.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Semantic HTML</span>
+                            <span class="tech-tag">Modern CSS</span>
+                            <span class="tech-tag">Responsive Media Queries</span>
+                            <span class="tech-tag">Mobile-First Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail">
+                    <div class="project-header">
+                        <h3><i class="fas fa-server"></i> Web Application with Database Integration</h3>
+                        <p style="opacity: 0.9;"><i class="fas fa-database"></i> Full-stack web application with backend functionality</p>
+                    </div>
+                    <div class="project-body">
+                        <p>A complete web application demonstrating full-stack development skills. Features include user registration, data persistence, and dynamic content generation with seamless frontend-backend integration.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">RESTful API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="contact.html" class="btn-primary"><i class="fas fa-handshake"></i> Interested in Working Together?</a>
+                    <a href="skills.html" class="btn-secondary" style="margin-left: 1rem;"><i class="fas fa-tools"></i> View My Skills</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Angeline P. Dorde. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="skills.html">Skills</a> | 
+                <a href="projects.html">Projects</a> | 
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

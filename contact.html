@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Me | Angeline P. Dorde</title>
+    <meta name="description" content="Get in touch with Angeline P. Dorde - Web Developer. Email, phone, and social media contact information.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #2a2a44, #5c5c82);
+            color: #fff;
+            padding: 6rem 0;
+        }
+        
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+        }
+        
+        .contact-info-card {
+            background: #868686;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(92, 92, 130, 0.1);
+        }
+        
+        .contact-info-card h3 {
+            color: #06063d;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #FFD700;
+        }
+      
+        .info-item {
+            margin-bottom: 2rem;
+        }
+        
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .info-item strong {
+            display: block;
+            color: #2a2a44;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .info-item a, .info-item p {
+            color: #090231;
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .info-item a:hover {
+            color: #2a2a44;
+            text-decoration: underline;
+        }
+        
+        .social-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #5c5c82, #2a2a44);
+            color: #161313;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    <div class="pattern-overlay"></div>
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><i class="fas fa-code"></i> Angeline P. Dorde</a></h1>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact-hero" style="background: linear-gradient(135deg, #2a2a44, #5c5c82); color: #fff; padding: 6rem 0;">
+            <div class="container">
+                <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <p class="tagline"><i class="fas fa-comments"></i> Let's Connect and Create Something Amazing Together</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-card">
+                        <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <strong>Email</strong>
+                            <a href="mailto:angelinedorde@gmail.com" class="contact-link">angelinedorde@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <strong>Phone</strong>
+                            <a href="tel:09382583281">09382583281</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-facebook"></i>
+                            <strong>Facebook</strong>
+                            <a href="https://www.facebook.com/share/1FWV3pApQh/" target="_blank"  nstyle="color: #fff;"> Angeline P. Dorde</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3 style="color: #2a2a44; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #FFD700;"><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
+                        <form action="mailto:angelinedorde@gmail.com" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-secondary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="color: #666; margin-bottom: 1rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <a href="projects.html" class="btn-primary"><i class="fas fa-briefcase"></i> View My Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Angeline P. Dorde. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="skills.html">Skills</a> | 
+                <a href="projects.html">Projects</a> | 
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

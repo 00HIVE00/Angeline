@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Skills | Angeline P. Dorde</title>
+    <meta name="description" content="Technical skills of Angeline P. Dorde - Web Development, Programming, and Database expertise.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .skills-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .skills-category {
+            background: linear-gradient(135deg, #2a2a44, #5c5c82); color: #fff; padding: 6rem 0;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(92, 92, 130, 0.1);
+        }
+        
+        .skills-category h3 {
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #FFD700;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, #ebd244, #fffb0b);
+            color: #070707;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(92, 92, 130, 0.4);
+        }
+        
+        .skills-hero {
+            background: linear-gradient(135deg, #2a2a44, #5c5c82);
+            color: #fff;
+            padding: 6rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    <div class="pattern-overlay"></div>
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><i class="fas fa-code"></i> Angeline P. Dorde</a></h1>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section skills-hero" style="background: linear-gradient(135deg, #2a2a44, #5c5c82); color: #fff; padding: 6rem 0;">
+            <div class="container">
+                <h2><i class="fas fa-tools"></i> My Skills</h2>
+                <p class="tagline"><i class="fas fa-laptop-code"></i> Technologies and Tools I Work With</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3><i class="fab fa-html5"></i> Web Development</h3>
+                        <div class="skills-list">
+                            <span class="skill-item"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
+                        </div>
+                        <p style="margin-top: 1.5rem; color: #ffffff; line-height: 1.8;">
+                            I specialize in creating responsive and interactive web applications using modern web technologies. From semantic HTML structure to dynamic JavaScript functionality and server-side PHP development.
+                        </p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skills-list">
+                            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+                        </div>
+                        <p style="margin-top: 1.5rem; color: #ffffff; line-height: 1.8;">
+                            Proficient in object-oriented programming and problem-solving using Python and Java. Experienced in building applications and implementing algorithms.
+                        </p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skills-list">
+                            <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="skill-item"><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                        <p style="margin-top: 1.5rem; color: #ffffff; line-height: 1.8;">
+                            Skilled in both relational (MySQL) and NoSQL (MongoDB) database management. Experienced in database design, query optimization, and data management.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="projects.html" class="btn-primary"><i class="fas fa-briefcase"></i> View My Projects</a>
+                    <a href="contact.html" class="btn-secondary" style="margin-left: 1rem;"><i class="fas fa-handshake"></i> Let's Work Together</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Angeline P. Dorde. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="skills.html">Skills</a> | 
+                <a href="projects.html">Projects</a> | 
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
