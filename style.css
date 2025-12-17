@@ -1391,10 +1391,11 @@ footer {
 }
 
 .seo-layout {
-    display: grid;
-    grid-template-columns: minmax(260px, 340px) 1fr;
+    /* Flex-wrap makes the layout respond smoothly while resizing (no hard breakpoint needed) */
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .seo-toc {
@@ -1405,6 +1406,9 @@ footer {
     border: 1px solid rgba(92, 92, 130, 0.12);
     position: sticky;
     top: 90px;
+    flex: 0 1 340px;
+    max-width: 340px;
+    width: 100%;
 }
 
 .seo-toc-title {
@@ -1429,6 +1433,7 @@ footer {
     font-weight: 600;
     display: inline-block;
     padding: 0.25rem 0;
+    overflow-wrap: anywhere;
 }
 
 .seo-toc a:hover {
@@ -1443,6 +1448,8 @@ footer {
 .seo-content {
     display: grid;
     gap: 1.5rem;
+    flex: 1 1 560px;
+    min-width: 0; /* prevent horizontal overflow in flex layouts */
 }
 
 .seo-card {
@@ -1509,7 +1516,6 @@ footer {
 
 @media (max-width: 1024px) {
     .seo-layout {
-        grid-template-columns: 1fr;
         gap: 1.25rem;
     }
 
@@ -1517,6 +1523,12 @@ footer {
         position: static;
         top: auto;
         padding: 1.25rem;
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .seo-content {
+        flex-basis: 100%;
     }
 
     .seo-card {
