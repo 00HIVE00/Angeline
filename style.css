@@ -1459,6 +1459,18 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(92, 92, 130, 0.12);
     text-align: left;
+    min-width: 0; /* allow content to shrink within responsive layouts */
+}
+
+/* Prevent any SEO text from overflowing on small screens (fixes non-wrapping/side-scroll issues) */
+.seo-card,
+.seo-card p,
+.seo-card li,
+.seo-card a,
+.seo-note {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .seo-card h2 {
@@ -1565,6 +1577,11 @@ footer {
     .seo-code pre {
         padding: 0.9rem 1rem;
         -webkit-overflow-scrolling: touch;
+    }
+
+    /* Reduce indentation on narrow screens so bullet lists stay within the card */
+    .seo-list {
+        margin-left: 1rem;
     }
 }
 
