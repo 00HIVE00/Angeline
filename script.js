@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Observe elements for scroll animations
-    const animateElements = document.querySelectorAll('.project-card, .skills-category, .project-detail, .contact-info-card, .contact-form-container');
+    const animateElements = document.querySelectorAll('.project-card, .skills-category, .project-detail, .contact-info-card, .contact-form-container, .seo-card');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
