@@ -1507,15 +1507,58 @@ footer {
     font-size: 0.95rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .seo-layout {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .seo-toc {
         position: static;
         top: auto;
+        padding: 1.25rem;
     }
+
+    .seo-card {
+        padding: 1.5rem;
+    }
+
+    .seo-hero {
+        padding: 4.5rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .seo-hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .seo-toc-title {
+        font-size: 1.15rem;
+    }
+
+    .seo-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .seo-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .seo-card {
+        padding: 1.25rem;
+    }
+
+    .seo-code pre {
+        padding: 0.9rem 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Prevent sticky header from covering anchored sections when using the TOC */
+.seo-card {
+    scroll-margin-top: 110px;
 }
 
 /* =========================
