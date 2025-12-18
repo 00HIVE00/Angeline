@@ -1140,7 +1140,8 @@ h2 i, h3 i {
         display: block;
         background: none;
         border: none;
-        color: #fff;
+        /* Blue toggle icon on mobile */
+        color: #4f46e5;
         font-size: 1.5rem;
         cursor: pointer;
         padding: 0.5rem;
