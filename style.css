@@ -15,7 +15,8 @@ body {
         radial-gradient(circle at 50% 50%, rgba(42, 42, 68, 0.03) 0%, transparent 50%),
         linear-gradient(135deg, #CFCFCF 0%, #D5D5D5 50%, #CFCFCF 100%);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
-    background-attachment: fixed;
+    /* Using scroll instead of fixed improves performance on many devices */
+    background-attachment: scroll;
     color: #333;
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     opacity: 0;
@@ -378,7 +379,8 @@ h4 {
 }
 
 #nav-menu a {
-    color: #fff;
+    /* Default desktop nav link color */
+    color: #4f46e5;
     padding: 0.75rem 1rem;
     text-decoration: none;
     transition: all 0.3s;
@@ -1150,7 +1152,8 @@ h2 i, h3 i {
         top: 60px; 
         left: 0;
         width: 100%;
-        background: #2a2a44;
+        /* Dark background so it stands out above content */
+        background: #0f172a;
         display: none; /* Hidden by default (controlled by JS) */
         flex-direction: column;
         text-align: center;
@@ -1175,6 +1178,8 @@ h2 i, h3 i {
         display: block;
         padding: 1rem;
         width: 100%;
+        /* Ensure links are readable on the dark mobile menu background */
+        color: #ffffff;
     }
     
     #hero {
@@ -1649,7 +1654,8 @@ a:hover {
 }
 
 #nav-menu a {
-    color: var(--text);
+    /* Keep using the main nav link color defined earlier */
+    color: #4f46e5;
 }
 
 #nav-menu a::after {
